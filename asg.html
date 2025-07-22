@@ -27,19 +27,20 @@
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
+            font-size: 16px;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
 
         header {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                         url('fon.jpg') center/cover;
             color: white;
-            padding: 120px 0;
+            padding: 80px 0;
             text-align: center;
             position: relative;
         }
@@ -50,33 +51,34 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px;
+            height: 60px;
             background: linear-gradient(transparent, var(--light));
         }
 
         h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-bottom: 15px;
             position: relative;
             z-index: 2;
         }
 
         .subtitle {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             max-width: 800px;
             margin: 0 auto;
             opacity: 0.9;
             position: relative;
             z-index: 2;
+            padding: 0 10px;
         }
 
         section {
-            padding: 80px 0;
+            padding: 50px 0;
         }
 
         h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
             color: var(--primary);
             text-align: center;
             position: relative;
@@ -85,44 +87,49 @@
         h2:after {
             content: "";
             display: block;
-            width: 100px;
-            height: 4px;
+            width: 80px;
+            height: 3px;
             background: var(--secondary);
-            margin: 20px auto;
+            margin: 15px auto;
             border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
         }
 
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
         }
 
         .team-card {
             background: white;
-            border-radius: 10px;
-            padding: 30px;
+            border-radius: 8px;
+            padding: 20px;
             box-shadow: var(--shadow);
             text-align: center;
             transition: var(--transition);
         }
 
         .team-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .team-name {
-            font-size: 1.5rem;
-            margin: 15px 0 5px;
+            font-size: 1.2rem;
+            margin: 10px 0 5px;
             color: var(--primary);
         }
 
         .team-role {
             color: var(--secondary);
             font-weight: 500;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
         }
 
         .problem-list {
@@ -133,36 +140,46 @@
         .problem-item {
             background: white;
             border-left: 4px solid var(--accent);
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 15px;
+            margin-bottom: 15px;
             border-radius: 0 5px 5px 0;
             box-shadow: var(--shadow);
         }
 
         .problem-item h3 {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .problem-item p {
+            font-size: 0.95rem;
         }
 
         .goals-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
             max-width: 1000px;
             margin: 0 auto;
         }
 
         .goal-item {
             background: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: var(--shadow);
             border-top: 4px solid var(--secondary);
         }
 
         .goal-item h3 {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .goal-item p {
+            font-size: 0.95rem;
         }
 
         .audience-section {
@@ -184,9 +201,15 @@
             text-align: center;
         }
 
+        .audience-content p {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
         .table-container {
             overflow-x: auto;
-            margin: 40px 0;
+            margin: 30px 0;
+            -webkit-overflow-scrolling: touch;
         }
 
         table {
@@ -196,12 +219,14 @@
             box-shadow: var(--shadow);
             border-radius: 8px;
             overflow: hidden;
+            min-width: 600px;
         }
 
         th, td {
-            padding: 15px;
+            padding: 12px 10px;
             text-align: left;
             border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
         }
 
         th {
@@ -226,15 +251,15 @@
             background-color: var(--secondary);
             top: 0;
             bottom: 0;
-            left: 50%;
-            margin-left: -2px;
+            left: 31px;
         }
 
         .timeline-item {
-            padding: 10px 40px;
+            padding: 10px 0 10px 70px;
             position: relative;
-            width: 50%;
+            width: 100%;
             box-sizing: border-box;
+            margin-bottom: 20px;
         }
 
         .timeline-item::after {
@@ -246,30 +271,24 @@
             border: 4px solid var(--secondary);
             border-radius: 50%;
             top: 15px;
+            left: 21px;
             z-index: 1;
         }
 
-        .left {
-            left: 0;
-        }
-
-        .right {
-            left: 50%;
-        }
-
-        .left::after {
-            right: -12px;
-        }
-
-        .right::after {
-            left: -12px;
-        }
-
         .timeline-content {
-            padding: 20px;
+            padding: 15px;
             background-color: white;
             border-radius: 8px;
             box-shadow: var(--shadow);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .timeline-content p {
+            font-size: 0.9rem;
         }
 
         .skills-section {
@@ -278,23 +297,24 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             max-width: 1000px;
             margin: 0 auto;
         }
 
         .skills-card {
             background: white;
-            padding: 30px;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: var(--shadow);
         }
 
         .skills-card h3 {
             color: var(--primary);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-align: center;
+            font-size: 1.2rem;
         }
 
         .skills-list {
@@ -302,9 +322,10 @@
         }
 
         .skills-list li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             position: relative;
             padding-left: 25px;
+            font-size: 0.95rem;
         }
 
         .skills-list li::before {
@@ -319,31 +340,71 @@
             background-color: var(--dark);
             color: white;
             text-align: center;
-            padding: 40px 0;
-            margin-top: 80px;
+            padding: 30px 0;
+            margin-top: 50px;
+            font-size: 0.9rem;
         }
 
-        @media (max-width: 768px) {
+        /* Медиазапросы для адаптации */
+        @media (min-width: 576px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            section {
+                padding: 60px 0;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            header {
+                padding: 100px 0;
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
+            .subtitle {
+                font-size: 1.3rem;
+            }
             .timeline::after {
-                left: 31px;
+                left: 50%;
             }
-
             .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
+                width: 50%;
+                padding: 10px 40px;
             }
-
-            .timeline-item::after {
-                left: 21px;
+            .left {
+                left: 0;
             }
-
-            .left::after, .right::after {
-                left: 21px;
-            }
-
             .right {
-                left: 0%;
+                left: 50%;
+            }
+            .left::after {
+                right: -12px;
+                left: auto;
+            }
+            .right::after {
+                left: -12px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .subtitle {
+                font-size: 1.5rem;
+            }
+            section {
+                padding: 80px 0;
+            }
+            h2 {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -401,7 +462,7 @@
         <h2>Актуальность проекта</h2>
         <div class="problem-item">
             <p>Рост грузоперевозок и повышение требований к оперативности и точности портовых операций подчеркивают актуальность нашего проекта. Существующие ручные методы управления погрузочно-разгрузочными работами уже не справляются с новыми вызовами логистических цепей, что снижает общую эффективность инфраструктуры.</p>
-            <p style="margin-top: 15px;">Автоматизация взаимодействия между погрузочными автомобилями и кранами оптимизирует процессы, сокращает расходы и создает прочную основу для дальнейшей модернизации портовых операций.</p>
+            <p style="margin-top: 10px;">Автоматизация взаимодействия между погрузочными автомобилями и кранами оптимизирует процессы, сокращает расходы и создает прочную основу для дальнейшей модернизации портовых операций.</p>
         </div>
     </section>
 
@@ -409,7 +470,7 @@
         <h2>Аналоги</h2>
         <div class="problem-item">
             <p>На рынке автоматизированных систем управления погрузочно-разгрузочными операциями в портах существует ряд решений, таких как TRANSPOSOFT, предлагающая комплексное управление погрузкой и разгрузкой с современными модулями. Несмотря на богатый функционал, эти системы требуют значительных инвестиций, сложны в интеграции с существующими платформами и часто не адаптируются к локальным условиям.</p>
-            <p style="margin-top: 15px;">Многие разработки характеризуются узкой специализацией и зависят от конкретных платформ, что затрудняет гибкую адаптацию и увеличивает риск сбоев, подчеркивая необходимость создания интегрированных и гибких решений для оптимизации портовых операций.</p>
+            <p style="margin-top: 10px;">Многие разработки характеризуются узкой специализацией и зависят от конкретных платформ, что затрудняет гибкую адаптацию и увеличивает риск сбоев, подчеркивая необходимость создания интегрированных и гибких решений для оптимизации портовых операций.</p>
         </div>
     </section>
 
@@ -444,15 +505,15 @@
             <h2>Целевая аудитория</h2>
             <div class="audience-content">
                 <p>Целевая аудитория нашего проекта — специалисты, непосредственно связанные с управлением портовой инфраструктурой: руководители, операционные менеджеры, логисты, инженеры и IT-эксперты, которым требуется повышение скорости обработки грузов и улучшение координации между погрузочными автомобилями и кранами.</p>
-                <p style="margin-top: 20px;">Стейкхолдерами нашего проекта являются операторы портов, государственные регуляторы, инвестиционные фонды и технологические компании, вовлечённые в разработку автоматизированных решений.</p>
-                <p style="margin-top: 20px;">Потенциальными заказчиками выступают крупные и средние порты, транспортно-логистические компании и разработчики интегрированных систем управления грузоперевозками, что способствует созданию инновационного продукта для повышения конкурентоспособности отрасли.</p>
+                <p>Стейкхолдерами нашего проекта являются операторы портов, государственные регуляторы, инвестиционные фонды и технологические компании, вовлечённые в разработку автоматизированных решений.</p>
+                <p>Потенциальными заказчиками выступают крупные и средние порты, транспортно-логистические компании и разработчики интегрированных систем управления грузоперевозками, что способствует созданию инновационного продукта для повышения конкурентоспособности отрасли.</p>
             </div>
         </div>
     </section>
 
     <section class="container">
         <h2>Экономика проекта</h2>
-        <h3 style="text-align: center; margin-bottom: 20px;">Стоимость прототипа</h3>
+        <h3 style="text-align: center; margin-bottom: 15px;">Стоимость прототипа</h3>
         <div class="table-container">
             <table>
                 <thead>
@@ -542,55 +603,55 @@
     <section class="container">
         <h2>Этапы проекта</h2>
         <div class="timeline">
-            <div class="timeline-item left">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Анализ требований и проектирование системы</h3>
                     <p>01.04.25 – 05.04.25</p>
                 </div>
             </div>
-            <div class="timeline-item right">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Разработка прототипа WiFi-платформ + интерфейса оператора</h3>
                     <p>06.04.25 – 15.04.25</p>
                 </div>
             </div>
-            <div class="timeline-item left">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Создание ПО для маршрутизации и интеграция ML</h3>
                     <p>16.04.25 – 25.04.25</p>
                 </div>
             </div>
-            <div class="timeline-item right">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Лабораторное тестирование компонентов</h3>
                     <p>26.04.25 – 30.04.25</p>
                 </div>
             </div>
-            <div class="timeline-item left">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Доработка системы + оптимизация алгоритмов</h3>
                     <p>01.05.25 – 10.05.25</p>
                 </div>
             </div>
-            <div class="timeline-item right">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Комплексное тестирование и подготовка документации</h3>
                     <p>11.05.25 – 20.05.25</p>
                 </div>
             </div>
-            <div class="timeline-item left">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Финальное тестирование системы</h3>
                     <p>21.05.25 – 01.06.25</p>
                 </div>
             </div>
-            <div class="timeline-item right">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Окончательное внедрение ИИ в систему</h3>
                     <p>07.06.25</p>
                 </div>
             </div>
-            <div class="timeline-item left">
+            <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Финальное тестирование</h3>
                     <p>10.06.25</p>
